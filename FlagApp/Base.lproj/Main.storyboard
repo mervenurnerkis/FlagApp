@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Fkp-OO-maj">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Anasayfa-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FlagApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QUİZE HOŞGELDİNİZ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="02I-t3-1bG">
+                                <rect key="frame" x="50" y="232" width="293" height="36"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qJ3-r3-0Ct">
+                                <rect key="frame" x="30" y="408" width="333" height="36"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="BAŞLA">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="VFA-1z-aMs" kind="show" id="aZW-vZ-sag"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qJ3-r3-0Ct" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="IG8-3d-zLj"/>
+                            <constraint firstItem="qJ3-r3-0Ct" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="TpL-rl-epR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qJ3-r3-0Ct" secondAttribute="trailing" constant="30" id="UgI-hd-SZT"/>
+                            <constraint firstItem="02I-t3-1bG" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="129" id="V4o-fB-Z8N"/>
+                            <constraint firstItem="02I-t3-1bG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k3I-kh-DxE"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qJ3-r3-0Ct" secondAttribute="bottom" constant="374" id="sqH-Kc-MNY"/>
+                            <constraint firstItem="qJ3-r3-0Ct" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="vEI-Oi-hng"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Anasayfa" id="swE-2q-ckh"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052.6717557251909" y="-27.464788732394368"/>
+        </scene>
+        <!--QUİZ EKRANI-->
+        <scene sceneID="DAq-0Y-CFg">
+            <objects>
+                <viewController id="VFA-1z-aMs" customClass="QuizEkraniViewController" customModule="FlagApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Xpo-LD-unL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doğru: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tfi-Eu-pVH">
+                                <rect key="frame" x="86" y="179" width="64" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Yanlış: 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIv-yK-oxI">
+                                <rect key="frame" x="246" y="179" width="61" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.SORU" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WYo-Hs-X43">
+                                <rect key="frame" x="143.66666666666666" y="268" width="106" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="norvec" translatesAutoresizingMaskIntoConstraints="NO" id="hey-mD-BM4">
+                                <rect key="frame" x="85.666666666666686" y="351" width="222" height="147"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="147" id="3to-C2-9i5"/>
+                                    <constraint firstAttribute="width" constant="222" id="FbJ-tz-ABy"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yhv-aL-Rrk">
+                                <rect key="frame" x="86" y="538" width="221" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="W92-5Q-xT4"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="BUTTON A">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonAAct:" destination="VFA-1z-aMs" eventType="touchUpInside" id="EwC-T1-RpB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DB5-9z-8C0">
+                                <rect key="frame" x="86" y="596" width="221" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="oIl-i4-wmi"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="BUTTON B">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonBAct:" destination="VFA-1z-aMs" eventType="touchUpInside" id="koL-UR-aZw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G48-Ad-7ZH">
+                                <rect key="frame" x="86" y="654" width="221" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ZWu-jY-lFO"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="BUTTON C">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonCAct:" destination="VFA-1z-aMs" eventType="touchUpInside" id="Lbo-va-TUw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="815-8W-u0S">
+                                <rect key="frame" x="86" y="712" width="221" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="1pv-4V-UIg"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="BUTTON D">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buttonDAct:" destination="VFA-1z-aMs" eventType="touchUpInside" id="VhL-K4-shW"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Vfy-r1-UwM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="G48-Ad-7ZH" firstAttribute="trailing" secondItem="DB5-9z-8C0" secondAttribute="trailing" id="1eO-6Q-gYM"/>
+                            <constraint firstItem="Yhv-aL-Rrk" firstAttribute="top" secondItem="hey-mD-BM4" secondAttribute="bottom" constant="40" id="9iW-C8-gR4"/>
+                            <constraint firstItem="G48-Ad-7ZH" firstAttribute="trailing" secondItem="815-8W-u0S" secondAttribute="trailing" id="CMm-tj-KZ3"/>
+                            <constraint firstItem="Tfi-Eu-pVH" firstAttribute="leading" secondItem="Vfy-r1-UwM" secondAttribute="leading" constant="86" id="DVu-WJ-EoR"/>
+                            <constraint firstItem="815-8W-u0S" firstAttribute="top" secondItem="G48-Ad-7ZH" secondAttribute="bottom" constant="18" id="GST-3I-bLg"/>
+                            <constraint firstItem="Yhv-aL-Rrk" firstAttribute="leading" secondItem="DB5-9z-8C0" secondAttribute="leading" id="PZ3-Fn-l7k"/>
+                            <constraint firstItem="hey-mD-BM4" firstAttribute="top" secondItem="WYo-Hs-X43" secondAttribute="bottom" constant="47" id="RES-Yd-geD"/>
+                            <constraint firstItem="Yhv-aL-Rrk" firstAttribute="leading" secondItem="Tfi-Eu-pVH" secondAttribute="leading" id="SPW-6b-w4U"/>
+                            <constraint firstItem="hey-mD-BM4" firstAttribute="centerX" secondItem="WYo-Hs-X43" secondAttribute="centerX" id="SY8-UZ-fWG"/>
+                            <constraint firstItem="G48-Ad-7ZH" firstAttribute="top" secondItem="DB5-9z-8C0" secondAttribute="bottom" constant="18" id="bWz-5Q-76w"/>
+                            <constraint firstItem="G48-Ad-7ZH" firstAttribute="centerX" secondItem="DB5-9z-8C0" secondAttribute="centerX" id="fJK-EZ-5Wr"/>
+                            <constraint firstItem="Tfi-Eu-pVH" firstAttribute="top" secondItem="Vfy-r1-UwM" secondAttribute="top" constant="76" id="fQl-fO-W6Q"/>
+                            <constraint firstItem="WYo-Hs-X43" firstAttribute="top" secondItem="Tfi-Eu-pVH" secondAttribute="bottom" constant="68" id="fZK-UP-A6U"/>
+                            <constraint firstItem="Yhv-aL-Rrk" firstAttribute="centerX" secondItem="hey-mD-BM4" secondAttribute="centerX" id="izL-Ix-wcA"/>
+                            <constraint firstItem="DB5-9z-8C0" firstAttribute="top" secondItem="Yhv-aL-Rrk" secondAttribute="bottom" constant="18" id="mLZ-7S-uAJ"/>
+                            <constraint firstItem="WYo-Hs-X43" firstAttribute="centerX" secondItem="Xpo-LD-unL" secondAttribute="centerX" id="oT4-Pv-Nhf"/>
+                            <constraint firstItem="Yhv-aL-Rrk" firstAttribute="trailing" secondItem="DB5-9z-8C0" secondAttribute="trailing" id="pBB-pH-Yw4"/>
+                            <constraint firstItem="MIv-yK-oxI" firstAttribute="top" secondItem="Vfy-r1-UwM" secondAttribute="top" constant="76" id="tGF-78-EmU"/>
+                            <constraint firstItem="Vfy-r1-UwM" firstAttribute="trailing" secondItem="MIv-yK-oxI" secondAttribute="trailing" constant="86" id="tsj-C4-2tx"/>
+                            <constraint firstItem="G48-Ad-7ZH" firstAttribute="leading" secondItem="815-8W-u0S" secondAttribute="leading" id="xtX-mA-0dg"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="QUİZ EKRANI" id="lhN-DV-gMl"/>
+                    <connections>
+                        <outlet property="buttonA" destination="Yhv-aL-Rrk" id="qlv-ou-obY"/>
+                        <outlet property="buttonB" destination="DB5-9z-8C0" id="dAL-Mu-jaQ"/>
+                        <outlet property="buttonC" destination="G48-Ad-7ZH" id="XaS-YV-4tv"/>
+                        <outlet property="buttonD" destination="815-8W-u0S" id="UOm-el-Fbf"/>
+                        <outlet property="imageViewBayrak" destination="hey-mD-BM4" id="bMh-ad-mE1"/>
+                        <outlet property="labelDogru" destination="Tfi-Eu-pVH" id="lFP-wt-5iL"/>
+                        <outlet property="labelSoruSayisi" destination="WYo-Hs-X43" id="gpu-en-ENw"/>
+                        <outlet property="labelYanlis" destination="MIv-yK-oxI" id="mlD-U2-dJB"/>
+                        <segue destination="myX-Wd-fgT" kind="show" identifier="toSonucEkrani" id="Mbd-jF-SXQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5za-l5-y3d" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1805.3435114503816" y="-26.056338028169016"/>
+        </scene>
+        <!--SONUÇ EKRANI-->
+        <scene sceneID="4GU-Bg-EyL">
+            <objects>
+                <viewController id="myX-Wd-fgT" customClass="SonucEkraniViewController" customModule="FlagApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="WPj-Sc-jyE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kZV-AX-dB9">
+                                <rect key="frame" x="86" y="558" width="221" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Y2h-FX-CX9"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="TEKRAR DENE">
+                                            <attributes>
+                                                <font key="NSFont" size="24" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tekrarDene:" destination="myX-Wd-fgT" eventType="touchUpInside" id="jpo-zo-71d"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="4 DOĞRU 1 YANLIŞ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yab-TM-OP9">
+                                <rect key="frame" x="63" y="229" width="267" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="%25 BAŞARI" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nfe-wO-06G">
+                                <rect key="frame" x="121.66666666666669" y="335" width="150" height="30"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
+                                <color key="textColor" red="0.81721395254135132" green="0.0033850278705358505" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="q4o-le-aAL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="kZV-AX-dB9" firstAttribute="leading" secondItem="q4o-le-aAL" secondAttribute="leading" constant="86" id="65l-NN-NTM"/>
+                            <constraint firstItem="yab-TM-OP9" firstAttribute="centerX" secondItem="WPj-Sc-jyE" secondAttribute="centerX" id="CnE-Ya-GFx"/>
+                            <constraint firstItem="yab-TM-OP9" firstAttribute="top" secondItem="q4o-le-aAL" secondAttribute="top" constant="126" id="DBc-pc-t4O"/>
+                            <constraint firstItem="yab-TM-OP9" firstAttribute="leading" secondItem="q4o-le-aAL" secondAttribute="leading" constant="63" id="GUd-EN-SB5"/>
+                            <constraint firstItem="kZV-AX-dB9" firstAttribute="centerX" secondItem="WPj-Sc-jyE" secondAttribute="centerX" id="HG2-dW-aQQ"/>
+                            <constraint firstItem="Nfe-wO-06G" firstAttribute="centerX" secondItem="WPj-Sc-jyE" secondAttribute="centerX" id="JUp-8K-XB1"/>
+                            <constraint firstItem="q4o-le-aAL" firstAttribute="trailing" secondItem="kZV-AX-dB9" secondAttribute="trailing" constant="86" id="QIY-eg-lo3"/>
+                            <constraint firstItem="q4o-le-aAL" firstAttribute="trailing" secondItem="yab-TM-OP9" secondAttribute="trailing" constant="63" id="hPB-J0-r9z"/>
+                            <constraint firstItem="yab-TM-OP9" firstAttribute="leading" secondItem="q4o-le-aAL" secondAttribute="leading" constant="63" id="hej-GP-tO9"/>
+                            <constraint firstItem="q4o-le-aAL" firstAttribute="trailing" secondItem="yab-TM-OP9" secondAttribute="trailing" constant="63" id="jhC-Hl-Fbu"/>
+                            <constraint firstItem="Nfe-wO-06G" firstAttribute="top" secondItem="yab-TM-OP9" secondAttribute="bottom" constant="70" id="ptQ-rC-lwJ"/>
+                            <constraint firstItem="q4o-le-aAL" firstAttribute="bottom" secondItem="kZV-AX-dB9" secondAttribute="bottom" constant="220" id="roQ-Gw-it1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="SONUÇ EKRANI" id="6rJ-Ap-kbI"/>
+                    <connections>
+                        <outlet property="labelSonuc" destination="yab-TM-OP9" id="TwP-HM-aAQ"/>
+                        <outlet property="labelYuzde" destination="Nfe-wO-06G" id="ai3-44-330"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UoZ-8g-s3X" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2565.6488549618321" y="-16.197183098591552"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="uyR-Rg-WhR">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Fkp-OO-maj" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mfJ-cM-WTc">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="b4z-DE-Zay"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wzq-hu-w7Z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="127.48091603053435" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="norvec" width="300" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
